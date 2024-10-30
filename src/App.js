@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import './css/global.css';
+import './css/mediaQueries.css';
 
 function App() {
   return (

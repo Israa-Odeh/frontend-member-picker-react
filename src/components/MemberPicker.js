@@ -1,6 +1,7 @@
 import SearchBar from "./SearchBar";
 import MemberList from "./MemberList";
 import FormButtons from "./FormButtons";
+import '../css/main.css';
 
 export default function MemberPicker() {
   return (
