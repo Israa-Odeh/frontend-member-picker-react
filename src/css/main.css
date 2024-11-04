@@ -1,0 +1,135 @@
+.form__members-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form__search-bar {
+    display: flex;
+    width: 50%;
+    border-bottom: 1px solid #9298a6;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.form__search-icon--black {
+    display: none;
+}
+
+.form__search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.form__search-bar:focus-within {
+    border-bottom: 1.5px solid #242d4e;
+}
+
+.form__search-bar:focus-within .form__search-icon--gray {
+    display: none;
+}
+
+.form__search-bar:focus-within .form__search-icon--black {
+    display: block;
+}
+
+.form__member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    padding: 15px 10px;
+    border: 1px solid #9298a6;
+    border-radius: 3px;
+    color: #9298a6;
+}
+
+.form__person-icon--black {
+    display: none;
+}
+
+.form__member-label {
+    padding-left: 10px;
+}
+
+.form__member-checkbox {
+    position: absolute;
+    right: 10px;
+}
+
+.form__member-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9298a6;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.form__member:has(.form__member-checkbox:checked) {
+    color: #242d4e;
+}
+
+.form__member:has(.form__member-checkbox:checked) .form__person-icon--black {
+    display: block;
+}
+
+.form__member:has(.form__member-checkbox:checked) .form__person-icon--gray {
+    display: none;
+}
+
+.form__member-checkbox:checked {
+    border: none;
+    background-image: url('../images/check-mark.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__button {
+    padding: 15px 50px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form__button--reset {
+    background-color: #ffffff;
+    border: 1px solid #f6f5fa;
+    color: #e3e3eb;
+}
+
+.form__button--submit {
+    background: linear-gradient(to right, #6db7ff, #7594ff, #7886ff);
+    border: none;
+    color: #e3e3eb;
+    box-shadow: 0 3px 5px #7886ff9f;
+}
+
+.form__button--reset:hover {
+    background-color: #f7f7f75d;
+}
+
+.form__button--submit:hover {
+    background: #7886ff;
+}
+
+/* For mobile devices and tablets (portrait) */
+@media (max-width: 768px) {
+    .form__member-checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .form__button {
+        padding: 10px 30px;
+    }
+}

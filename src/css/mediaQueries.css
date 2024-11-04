@@ -1,0 +1,32 @@
+/* For mobile devices */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header__title {
+        max-width: 30ch;
+    }
+
+    .form__search-bar {
+        width: 60%;
+    }
+
+    .form__member {
+        width: 60%;
+    }
+
+    .form__member-checkbox {
+        width: 10px;
+        height: 10px;
+    }
+
+    .form__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__button {
+        margin: 5px 0;
+    }
+}
