@@ -1,7 +1,7 @@
 import searchGray from "../images/search-gray.png";
 import searchBlack from "../images/search-black.png";
 
-export default function SearchBar() {
+const SearchBar = () => {
   return (
     <div className="form__search-bar">
       <img
@@ -26,4 +26,6 @@ export default function SearchBar() {
       />
     </div>
   );
-}
+};
+
+export default SearchBar;

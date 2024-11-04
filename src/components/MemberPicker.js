@@ -1,9 +1,9 @@
 import SearchBar from "./SearchBar";
 import MemberList from "./MemberList";
 import FormButtons from "./FormButtons";
-import '../css/main.css';
+import "../css/main.css";
 
-export default function MemberPicker() {
+const MemberPicker = () => {
   return (
     <main>
       <form className="form" action="https://httpbin.org/post" method="post">
@@ -18,4 +18,6 @@ export default function MemberPicker() {
       </form>
     </main>
   );
-}
+};
+
+export default MemberPicker;

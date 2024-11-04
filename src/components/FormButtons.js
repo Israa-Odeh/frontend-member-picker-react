@@ -1,4 +1,4 @@
-export default function FormButtons() {
+const FormButtons = () => {
   return (
     <div className="form__buttons">
       <input
@@ -13,4 +13,6 @@ export default function FormButtons() {
       />
     </div>
   );
-}
+};
+
+export default FormButtons;

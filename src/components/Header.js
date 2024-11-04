@@ -1,6 +1,6 @@
 import "../css/header.css";
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="header">
       <h1 className="header__title">
@@ -15,4 +15,6 @@ export default function Header() {
       </button>
     </header>
   );
-}
+};
+
+export default Header;

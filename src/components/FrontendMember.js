@@ -1,7 +1,7 @@
 import personGary from "../images/person-gray.png";
 import personBlack from "../images/person-black.png";
 
-export default function FrontendMember({ member }) {
+const FrontendMember = ({ member }) => {
   return (
     <div className="form__member">
       <img
@@ -30,4 +30,6 @@ export default function FrontendMember({ member }) {
       />
     </div>
   );
-}
+};
+
+export default FrontendMember;
